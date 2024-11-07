@@ -1,0 +1,34 @@
+#define
+#define MAX_PALAVRAS 1000
+[MAX_PALAVRAS][20]; // 
+bool verificaPalavra(char palavra[]) {
+for (int i = 0; i < MAX_PALAVRAS; i++) {
+if (strcmp(palavra, palavrasValidas[i]) == 0) {
+return true; } }  return false;
+} int calculaPontuacao(char palavra[]) {
+int pontuacao = 0;   int tamanho = strlen(palavra);   
+// ... Lógica para calcular a pontuação baseado no comprimento e valor das letras ...
+return pontuacao; } Exemplo Completo
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+#define MAX_PALAVRAS 1000
+
+// ... (código para preencher o array palavrasValidas) ...
+
+bool verificaPalavra(char palavra[]) {
+    // ... (implementação da função) ...
+}
+
+int calculaPontuacao(char palavra[]) {
+    // ... (implementação da função) ...
+}
+
+int main() { char palavraJogador[20];
+printf("Digite a palavra: ");
+scanf("%s", palavraJogador);
+if (verificaPalavra(palavraJogador)) { int pontuacao = calculaPontuacao(palavraJogador);
+printf("Palavra válida! Pontuação: %d\n", pontuacao);
+} else {  printf("Palavra inválida.\n");
+}  return 0;} 
